@@ -88,9 +88,9 @@ $catkin_make
 If the script does not work, run the following commands in multiple sourced terminals:
 ```
 $rm -f ~/.ros/rtabmap.db  #to remove the previous mapping database
-$roslaunch RTABMap_FastSLAMBot slambot_world.launch world_file:=/catkin_ws/src/RTABMap_FastSLAMBot/worlds/kitchen_dining.world 
-$roslaunch RTABMap_FastSLAMBot teleop.launch
-$roslaunch RTABMap_FastSLAMBot mapping.launch simulation:=true
-$roslaunch RTABMap_FastSLAMBot rviz.launch
+$roslaunch slam_project slambot_world.launch world_file:=/catkin_ws/src/slam_project/worlds/kitchen_dining.world 
+$roslaunch slam_project teleop.launch
+$roslaunch slam_project mapping.launch simulation:=true
+$roslaunch slam_project rviz.launch
 
 ```
