@@ -5,7 +5,7 @@
 <!-- setting argument names to be used later on in the file -->
   <arg name="gui"        default="true"/>
 <!-- base world file : Change the file name to whatever world you want to launch the robot in-->
-  <arg name="world_file" default="$(find slam_project)/worlds/kitchen_dining.world"/>
+  <arg name="world_file" default="$(find slam_project)/worlds/martin.world"/>
 
   <arg name="base"       value="$(optenv TURTLEBOT_BASE kobuki)"/> <!-- create, roomba, kobuki -->
   <arg name="battery"    value="$(optenv TURTLEBOT_BATTERY /proc/acpi/battery/BAT0)"/>  <!-- /proc/acpi/battery/BAT0 -->
