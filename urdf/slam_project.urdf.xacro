@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <robot name="slam_project" xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="turtlebot_sim_3dsensor">
+<!-- the other xml robot files can be found in slam_prokect/launch/includes... -->
   <!-- RGBD Camera -->
   <gazebo reference="camera_link">
     <sensor type="depth" name="camera1">
