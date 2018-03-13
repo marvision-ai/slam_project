@@ -1,7 +1,7 @@
 # slam_project
 RTAB-Map (Real-Time Appearance-Based Mapping) is a RGB-D Graph SLAM approach based on a global Bayesian loop closure detector. 
 
-This repository is meant to be a stand alone package that can run FastSLAM with RTAB occupancy grid mapping with a mini sample robot in 2 different gazebo environments. 
+This repository is meant to be a stand alone package that can run FastSLAM with RTAB occupancy grid mapping with the beloved turtle bot 2 different gazebo environments. The turtle bot was chosen due to having good sensor placement for good image scanning (including the z-axis) and laser detection.
 
 ## Required Packages
 1. rtabmap_ros 
@@ -19,7 +19,18 @@ $ cd ..
 $ catkin_make
 $ source ~/catkin_ws/devel/setup.bash
 ```
+## Running the project
 
+Run the following commands in multiple sourced terminals:
+```
+$rm -f ~/.ros/rtabmap.db  #to remove the previous mapping database
+$roslaunch slam_project slam_project_world.launch
+$roslaunch slam_project teleop.launch
+$roslaunch slam_project mapping.launch simulation:=true
+$roslaunch slam_project rviz.launch
+$rtabmap-databaseViewer ~/.ros/rtabmap.db  # to view the previous database 
+
+```
 
 ### If there are libraries missing/ no ROS workspace:
 It is easiest to grab the latest turtlebot packages along with gmapping and rosdep install all the required libraries.
@@ -85,12 +96,4 @@ $rosdep -i install rtabmap_ros
 $catkin_make
 ```
 
-If the script does not work, run the following commands in multiple sourced terminals:
-```
-$rm -f ~/.ros/rtabmap.db  #to remove the previous mapping database
-$roslaunch slam_project slam_project_world.launch
-$roslaunch slam_project teleop.launch
-$roslaunch slam_project mapping.launch simulation:=true
-$roslaunch slam_project rviz.launch
 
-```
