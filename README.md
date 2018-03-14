@@ -7,6 +7,7 @@ This repository is meant to be a stand alone package that can run FastSLAM with 
 1. rtabmap_ros 
 2. turtlebot 
 3. depthimage_to_laserscan
+4. gmapping slam
 
 
 ## Project Setup
