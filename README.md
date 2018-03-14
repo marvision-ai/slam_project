@@ -4,10 +4,10 @@ RTAB-Map (Real-Time Appearance-Based Mapping) is a RGB-D Graph SLAM approach bas
 This repository is meant to be a stand alone package that can run FastSLAM with RTAB occupancy grid mapping with the beloved turtle bot in 2 different gazebo environments. The turtle bot was chosen due to having good sensor placement for image scanning (including the z-axis) and laser detection.
 
 ## Required Packages
-1. rtabmap_ros 
-2. turtlebot 
-3. depthimage_to_laserscan
-4. gmapping slam
+1. rtabmap_ros ( steps for this at the bottom)
+2. turtlebot packages (turtlebot_gazebo, turtlebot_teleop) ( instructions on installing these below) 
+3. depthimage_to_laserscan (https://github.com/ros-perception/depthimage_to_laserscan )
+4. gmapping slam 
 
 
 ## Project Setup
