@@ -1,6 +1,9 @@
 # RTAB-Map based Graph SLAM
 RTAB-Map (Real-Time Appearance-Based Mapping) is a RGB-D Graph SLAM approach based on a global Bayesian loop closure detector. 
 
+![alt text](images/kitchen_dining/turtleBot_finalSlam.png "RTAB Mapping")
+
+
 This repository is meant to be a stand alone package that can run FastSLAM with RTAB occupancy grid mapping with the beloved turtle bot in 2 different gazebo environments. The turtle bot was chosen due to having good sensor placement for image scanning (including the z-axis) and laser detection.
 
 Please read the [Project Writeup for more information.](https://github.com/mbufi/slam_project/blob/master/3DSlam-Writeup.pdf)
